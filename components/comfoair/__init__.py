@@ -521,9 +521,8 @@ comfoair_sensors_schemas = cv.Schema(
 )
 
 CONFIG_SCHEMA = cv.All(
-    climate.climate_schema().extend(
+    climate.climate_schema(ComfoAirComponent).extend(
         {
-            cv.GenerateID(CONF_ID): cv.declare_id(ComfoAirComponent),
             cv.Required(REQUIRED_KEY_NAME): cv.string,
             cv.Required(CONF_PROXY_UART_ID): cv.use_id(uart),
             cv.Optional(CONF_RED_LED_ID): cv.use_id(switch),
