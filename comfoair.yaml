@@ -59,7 +59,7 @@ uart:
 external_components:
   - source:
       type: git
-      url: https://github.com/julianpas/esphome-comfoair
+      url: https://github.com/manuvice/esphome-comfoair
     components: ["comfoair"]
 
 comfoair:
