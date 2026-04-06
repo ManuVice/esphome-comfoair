@@ -24,7 +24,7 @@ public:
   // Poll every 600ms default
   ComfoAirComponent() :
   Climate(),
-  PollingComponent(600),
+  PollingComponent(2000),
   UARTDevice() { }
 
   void setup() override {
